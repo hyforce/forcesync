@@ -1,0 +1,36 @@
+
+<div class="row">
+	<div class="col-md-2">
+	</div>
+ 	<div class="col-md-10">	
+  		<h1>List of Merchandise</h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8">
+		<table class="table table-striped" ng-controller="MyCtrl1">
+			<thead>
+		        <tr>
+		           
+		           <th>Name</th>
+		            <th>Price</th>
+		            
+		        </tr>
+		    </thead>
+		    <tr ng-repeat="merchandise in merchandiseList"> 
+		    <td>
+		    	{{merchandise.Name}}
+		    </td>
+		    <td>
+		    	${{merchandise.Price__c}}
+		    </td>
+		    </tr>
+		 
+		</table>
+	</div>
+	<div class="col-md-2">
+	</div>
+</div>
